@@ -1,0 +1,77 @@
+# Author: Juan C Martinez Carrillo, Systems Engineer from Mexico
+# Technical blog with thoughts, memories and learning experiences related to IT
+# jcroyoaun - 2021
+#
+#
+# Project information
+site_name: jcroyoaun-devblog
+site_description: Memoirs of a Systems Engineer
+site_author: Juan C Martinez Carrillo
+site_description: >-
+  Personal technical dairy to reference back previous learning experiences
+site_url: 'https://jcroyoaun-devblog.io/'
+repo_name: jcroyoaun-devblog
+repo_url: 'https://github.com/jcroyoaun/jcroyoaun-devblog/'
+edit_uri: edit/dev/docs
+
+# Navigation bar definition
+nav:
+  - Home: index.md
+  - DevOps:
+    - Ansible: 
+      - Encrypt Pass with Ansible Vault: ansible/encryptvault.md 
+  - Dev:
+    - Python:
+      - Linear Data Structures: 
+        - Overview: datastructures/overview.md
+        - Node: datastructures/node.md
+    - Oracle Commerce:
+      - ATG:
+        - overview: atg/overview.md
+        - Updating an order: atg/update-order.md
+      - Endeca:
+        - Check for locks: endeca/locks.md
+        - Forge already running: endeca/forge-running.md
+  - Ops:
+    - UNIX:
+      - Chown vs Chmod: unix/chownchmod.md
+      - Turn Debug mode off Tomcat: unix/tomcat-debug-mode.md
+
+
+
+theme:
+  name: material
+  favicon: assets/favicon.ico
+  logo: assets/icon-cart.svg
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - groovy
+  icon:
+    repo: fontawesome/brands/gitlab
+  palette:
+    primary: indigo
+  font:
+    text: Roboto
+  features:
+    - search.highlight
+    - navigation.top
+    - navigation.instant
+markdown_extensions:
+  - pymdownx.tilde
+  - attr_list
+  - abbr
+  - def_list
+  - pymdownx.snippets
+  - admonition
+  - codehilite
+  - pymdownx.details
+  - pymdownx.mark
+  - pymdownx.inlinehilite
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: true
